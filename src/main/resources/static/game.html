@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<header><div class="header">
+
+    <button id="logOut">Log Out</button><br>
+    <h1>Cold War: Battleship!</h1>
+    <a href="http://localhost:8080/games.html" class="ui-btn" id="homeButton">Home</a>
+
+</div></header>
+
+
+
+<div class="infoTitle">
+<h2 class="gridTitle">The USSR</h2>
+    <h2>The US of A</h2>
+</div>
+
+<div class="twoGrids">
+    <div id="grid"></div>
+    <div id="shipDiv" class="dropdown">
+       <div id="shipPlacer">
+           <h3>Ships to place:</h3>
+            <div id="shipChooser" class="dropdown-content">
+                <div id="destroyer" class="ship">Destroyer *3 </div>
+                <div id="patrolBoat" class="ship">Patrol Boat *2</div>
+                <div id="submarine" class="ship">Submarine *3</div>
+                <div id="aircraftCarrier" class="ship">Aircraft Carrier *5</div>
+                <div id="battleship" class="ship">Battleship *4</div>
+            </div>
+       </div>
+    </div>
+    <div id="salvoGrid"></div>
+</div>
+
+<h2>Game and Player Info</h2>
+<div class="playerInfo"></div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="scripts/game.js"></script>
+<footer><div class="footer"></div></footer>
+</body>
+</html>

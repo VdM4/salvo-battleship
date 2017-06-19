@@ -3,15 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <title>Games</title>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 
-<header><h1>Salvo!</h1></header>
+<header>
+    <div class="login">
+        <div class="buttons">
+            <button id="displayLogin">Log In</button>
+            <button id="displaySignIn">Sign Up</button>
+            <button id="logOut">Log Out</button><br>
+        </div>
+        <div id="loginDiv">
+            <form id="login-form" method="post" onsubmit="return false">
 
-<div class="gameList">
-    <h2>Games</h2>
-    <div class="List"></div>
+                <label> Email: <input type="text" name="username" value="username"></label><br>
+                <label> Password: <input type="password" name="password" value="password"></label><br>
+                <input id="loginButton" type="button" name="Login" value="For Stalin">
+
+            </form>
+        </div>
+        <div id="signInDiv">
+            <form id="signIn-form" method="post" onsubmit="return false">
+
+                <label>New Email: <input type="text" name="username" value="username"></label><br>
+                <label>New Password: <input type="password" name="password" value="password"></label><br>
+                <input id="signButton" type="button" name="Login" value="For Stalin">
+
+            </form>
+        </div>
+    </div>
+ <div class="title">
+    <h1>Cold War: Battleship!</h1>
+ </div>
+
+
+
+</header>
+<h2>LeaderBoard</h2>
+<div class="leaderboard">
+
 </div>
+
+<h2>Battles</h2>
+<div class="gameList">
+
+    <div class="battleSelect"></div>
+
+</div>
+
+<div class="createGame">
+    <button id="creation">Create Game</button>
+</div>
+
+
+<div class="superQuote"><h2>“I know not with what weapons World War III will be fought, but World War IV will be fought with sticks and stones.” - Albert Einstein</h2></div>
+
+
 
 
 

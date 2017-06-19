@@ -1,0 +1,95 @@
+body {
+    background-color: antiquewhite;
+    font-family: monospace;
+     width: 100%;
+     background: url("../assets/coldWar2.jpeg");
+     background-size: cover;
+}
+#leaderTable {
+    border: 2px solid black;
+    width: 45%;
+    height: 28%;
+}
+
+h1 {
+    color: antiquewhite;
+    font-size: 60px;
+}
+
+.login {
+    display: flex;
+    align-items: flex-start;
+}
+
+label {
+    color: antiquewhite;
+}
+
+h2 {
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+
+}
+
+button {
+    font-size: 15px;
+}
+
+.leaderboard {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.superQuote {
+    color: antiquewhite;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+.title {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+thead {
+    background-color: dodgerblue;
+}
+
+tbody {
+    background-color: antiquewhite;
+    border: 2px solid black;
+}
+
+.gameList {
+    display: flex;
+    justify-content: center;
+}
+
+#loginDiv {
+    display: none;
+}
+
+.center {
+    padding: 8px;
+    text-align: center;
+
+}
+
+#signInDiv {
+    display:none
+
+}
+
+#logOut {
+    display: none;
+}
+
+
+tr:hover {background-color: indianred};
+

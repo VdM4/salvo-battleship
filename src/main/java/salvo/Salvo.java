@@ -4,14 +4,12 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
-
 /**
- * Created by VdM on 08/05/2017.
+ * Created by VdM on 15/05/2017.
  */
 
 @Entity
-public class Ship {
-
+public class Salvo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -21,15 +19,20 @@ public class Ship {
     @JoinColumn(name = "gamePlayer")
     private GamePlayer gamePlayer;
 
-    private String shipType;
+    private int turn;
 
     @ElementCollection
     @Column(name = "locations")
     private List<String> locations;
 
-    public Ship() {
+    public Salvo () {
+
     }
 
+    public Salvo (int turn, ArrayList<String> locations){
+        this.turn = turn;
+        this.locations = locations;
+    }
 
     public Long getId() {
         return Id;
@@ -39,18 +42,20 @@ public class Ship {
         Id = id;
     }
 
-    public String getType() {
-        return shipType;
+    public GamePlayer getGamePlayer() {
+        return gamePlayer;
     }
 
-    public void setType(String type) {
-        this.shipType = type;
+    public void setGamePlayer(GamePlayer gamePlayer) {
+        this.gamePlayer = gamePlayer;
     }
 
-    public Ship(String shipType, ArrayList<String> locations) {
-        this.shipType = shipType;
-        this.locations = locations;
+    public int getTurn() {
+        return turn;
+    }
 
+    public void setTurn(int turn) {
+        this.turn = turn;
     }
 
     public List<String> getLocations() {
@@ -60,14 +65,4 @@ public class Ship {
     public void setLocations(List<String> locations) {
         this.locations = locations;
     }
-
-    public GamePlayer getGamePlayer() {
-        return this.gamePlayer;
-    }
-
-    public void setGamePlayer(GamePlayer gamePlayer) {
-
-        this.gamePlayer = gamePlayer;
-    }
-
 }
